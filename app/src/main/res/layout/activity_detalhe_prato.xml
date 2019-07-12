@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalhePrato">
+
+    <ImageView
+        android:id="@+id/imagem_prato_detalhe_id"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/nome_prato_detalhe_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:shadowColor="@color/cinzaEscuro"
+        android:text="Nome do Prato"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/branco"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/imagem_prato_detalhe_id"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/detalhes_prato_text_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:isScrollContainer="true"
+        android:text="	Lorem ipsum pulvinar curabitur lorem pharetra risus curabitur faucibus turpis sem ut, curae augue lacus integer dapibus habitant semper quis purus cubilia. torquent malesuada turpis venenatis etiam taciti porttitor mauris, erat accumsan vitae donec sed phasellus posuere, hendrerit gravida fusce lacinia quisque orci. fames lobortis inceptos taciti neque posuere praesent arcu tempus facilisis, ornare non taciti eu rhoncus cursus quisque senectus elementum nunc, tristique velit pharetra pellentesque hac bibendum commodo aenean. molestie elementum fermentum sit eu aliquam volutpat nibh sapien purus quam, dapibus mauris maecenas lacus orci iaculis elit semper habitasse platea class, eget ut potenti nisl luctus arcu mollis taciti pharetra.
+Senectus velit malesuada porttitor et laoreet nibh platea, aptent quisque imperdiet taciti eget venenatis mauris odio, primis commodo suscipit pharetra nec habitasse. per vitae dui imperdiet eu lacus platea euismod dictum amet mi suscipit, etiam nunc bibendum conubia lobortis posuere porta venenatis feugiat vel, vestibulum litora vulputate gravida varius a elementum dolor dapibus netus. ullamcorper turpis sed fames diam nunc duis varius inceptos, hac vehicula pellentesque imperdiet aenean accumsan volutpat, ligula etiam aliquam viverra sociosqu sed varius. congue ultricies tellus in etiam laoreet eget convallis accumsan, hendrerit sit dictum diam urna nibh rhoncus convallis conubia, nisl felis fusce mi velit rhoncus integer.
+Curabitur blandit euismod facilisis euismod consectetur dictum habitasse congue dolor consequat taciti, eleifend nostra lobortis mauris hac torquent ut curae curabitur praesent tempor, facilisis integer blandit libero lacus aenean sit magna neque lacus. ipsum nostra eros mattis praesent elementum auctor ut eros, orci porttitor per et ultricies ante sit per etiam, nullam ut ultrices magna mauris facilisis urna. dapibus donec mattis dictumst diam condimentum mauris donec torquent etiam interdum nec, magna euismod aptent vehicula ullamcorper arcu ullamcorper tristique urna sociosqu nam, rutrum ac pulvinar diam consequat gravida vehicula inceptos rutrum vestibulum. "
+        android:textSize="14sp"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagem_prato_detalhe_id" />
+
+</android.support.constraint.ConstraintLayout>

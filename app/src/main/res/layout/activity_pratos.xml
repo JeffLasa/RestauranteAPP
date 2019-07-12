@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".PratosActivity">
+
+
+    <ImageView
+        android:id="@+id/imagem_restaurante_pratos_id"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nome_restaurante_prato_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginBottom="8sp"
+        android:text="Nome do Restaurante"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/branco"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagem_restaurante_pratos_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pratos_principais_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Pratos Principais"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/cinzaEscuro"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagem_restaurante_pratos_id" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/container_recycler_pratos_id"
+        android:layout_width="395dp"
+        android:layout_height="469dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pratos_principais_id"
+        tools:visibility="visible" />
+</android.support.constraint.ConstraintLayout>
