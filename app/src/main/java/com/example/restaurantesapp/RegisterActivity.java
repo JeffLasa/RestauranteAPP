@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.regex.Pattern;
 
@@ -51,6 +52,11 @@ public class RegisterActivity extends AppCompatActivity {
 
             }
         }
+    }
+
+    public void adicionarCartao(View view) {
+        Intent intent = new Intent(this, AdicionarCartaoActivity.class);
+        startActivity(intent);
     }
 
     public void botaoClicado () {

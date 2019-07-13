@@ -30,7 +30,9 @@
         android:id="@+id/linear_layout_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button_adicionar_cartao_credito_id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,6 +105,17 @@
         android:textColor="@color/branco"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/button_adicionar_cartao_credito_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="115dp"
+        android:text="Adicionar Cartão de Crédito"
+        android:onClick="adicionarCartao"
+        app:layout_constraintBottom_toTopOf="@+id/button_register_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

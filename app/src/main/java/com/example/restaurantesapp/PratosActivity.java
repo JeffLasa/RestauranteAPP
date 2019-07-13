@@ -14,12 +14,10 @@ import com.example.restaurantesapp.interfaces.PratoListener;
 import com.example.restaurantesapp.model.Prato;
 import com.example.restaurantesapp.model.Restaurante;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 public class PratosActivity extends AppCompatActivity implements PratoListener {
-
 
 
     @SuppressLint("ResourceType")
@@ -33,7 +31,7 @@ public class PratosActivity extends AppCompatActivity implements PratoListener {
         ImageView fotoRestauranteImageView;
         List<Prato> listaPratos = new ArrayList<>();
 
-       Intent intent = getIntent();
+        Intent intent = getIntent();
 
         if (intent != null) {
             Bundle bundle = intent.getExtras();
@@ -49,12 +47,8 @@ public class PratosActivity extends AppCompatActivity implements PratoListener {
 
                 listaPratos = restaurante.getListaPratos();
 
-
-
-
             }
         }
-
 
 
         PratoAdapter pratoAdapter = new PratoAdapter(listaPratos, this);
@@ -62,7 +56,6 @@ public class PratosActivity extends AppCompatActivity implements PratoListener {
         RecyclerView recyclerView = findViewById(R.id.container_recycler_pratos_id);
         recyclerView.setAdapter(pratoAdapter);
         recyclerView.setLayoutManager(gridLayoutManager);
-
 
     }
 

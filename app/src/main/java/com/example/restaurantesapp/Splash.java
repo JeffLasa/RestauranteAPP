@@ -24,7 +24,7 @@ public class Splash extends AppCompatActivity {
     }
 
     private void irParaUserLoginActivity () {
-        Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
 
     }

@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Pratos Principais"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/cinzaEscuro"
@@ -48,10 +48,11 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/container_recycler_pratos_id"
-        android:layout_width="395dp"
-        android:layout_height="469dp"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
